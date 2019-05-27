@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Page1 </title>
+<style>
+p{
+	margin:20px;
+	padding: 20px;
+}
+h2{
+	margin:20px;
+	padding: 20px;
+}
+</style>
+
+<link rel= "stylesheet"  href= "{{ url_for('static', filename='css/animate.css') }}">
+<link rel= "stylesheet"  href= "{{ url_for('static', filename='css/bootstrap.css') }}">
+<link rel= "stylesheet"  href= "{{ url_for('static', filename='css/style.css') }}">
+<link rel= "stylesheet"  href= "{{ url_for('static', filename='css/superfish.css') }}">
+<link rel= "stylesheet"  href= "{{ url_for('static', filename='css/map.css') }}">
+
+
+<script src="{{url_for('static', filename='js/modernizr-2.6.2.min.js')}}"></script>
+
+	</head>
+	<body>
+		<div id="fh5co-wrapper">
+		<div id="fh5co-page">
+		<div id="fh5co-header">
+			<header id="fh5co-header-section">
+				<div class="container">
+					<div class="nav-header">
+
+
+						<nav id="fh5co-menu-wrap" role="navigation">
+							<ul class="sf-menu" id="fh5co-primary-menu">
+								<li>
+									<a href="/">Home</a>
+								</li>
+								<li class="active">
+									<a href="" class="fh5co-sub-ddown">Menu</a>
+									<ul class="fh5co-sub-menu">
+										<li><a href="/page2" >Things to do</a></li>
+										<li><a href="/page1"  >Women in STEM</a></li>
+										<li><a href="/page3" >Quizzes</a></li>
+										<li><a href="/page4"  >News</a></li>
+										<li><a href="/page5"  >page5</a></li>
+										<li><a href="/page6"  >page6</a></li>
+									</ul>
+								</li>
+								<li><a href="/contact">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+
+		</div>
+
+
+	<div class="fh5co-hero">
+			<div class="fh5co-overlay"></div>
+				<div class="desc animate-box">
+					<h2>Coming Soon!</h2>
+					<span><a class="btn btn-light btn-lg btn-block">button text</a></span>
+				</div>
+			</div>
+		</div>
+				</div>
+
+
+
+		<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 text-center">
+
+							<p>Copyright 2019 title. All Rights Reserved. <br>Made by Charlotte, Emma and Nicole</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+		<!-- jQuery -->
+	<script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+		<!-- jQuery Easing -->
+	<script src="{{url_for('static', filename='js/jquery.easing.1.3.js')}}"></script>
+
+	<!-- Bootstrap -->
+	<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+
+	<!-- Waypoints -->
+	<script src="{{url_for('static', filename='js/jquery.waypoints.min.js')}}"></script>
+
+	<!-- Stellar -->
+	<script src="{{url_for('static', filename='js/jquery.stellar.min.js')}}"></script>
+
+	<!-- Superfish -->
+	<script src="{{url_for('static', filename='js/hoverIntent.js')}}"></script>
+	<script src="{{url_for('static', filename='js/superfish.js')}}"></script>
+
+	<!-- Main JS -->
+	<script src="{{url_for('static', filename='js/main.js')}}"></script>
+
+	<!-- mapcode JS -->
+	<script src="{{url_for('static', filename='js/mapcode.js')}}"></script>
+
+	<head>
+		<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"><!---Open source font from google=-->
+		<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet"><!--Custom Stylesheet (ours)-->
+		<link href='./static/map.css' rel='static' type='text/css'><!--Bootstrap CSS-->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet"><!--JQuery JS for Bootstrap -->
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js">
+		</script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js">
+		</script>
+		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+	</head>
+	<body>
+		<div class="row row-custom">
+			<div class="col-sm-12" id="map"></div>
+			<div class="d-flex justify-content-center" id="overlay">
+				<div class="btn-group btn-group-center">
+	        <button class="btn btn-custom" id="category 1" onclick="displayMarkers(1)" type="button">STEM Networking Events</button> <button class="btn btn-custom" id="category 2" onclick="displayMarkers(2)" type="button">STEM Speaking Events</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="./static/js/mapcode.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL8uZACjkHMb32pPJbdmprNKSWVa02EQo&callback=initMap">
+		</script> <!--Google Tracking for analytics-->
+
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109949643-1">
+		</script>
+		<script>
+		        window.dataLayer = window.dataLayer || [];
+		        function gtag(){dataLayer.push(arguments)};
+		        gtag('js', new Date());
+		        gtag('config', 'UA-109949643-1');
+		</script>
+	</body>
+</html>
